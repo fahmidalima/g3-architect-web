@@ -12,6 +12,9 @@
 .disply-flex{
     display: flex;
 }
+.text-primary{
+  color:#FF900E ;
+}
 .dark3{
   color: #727272;
 }
@@ -27,6 +30,18 @@
   border-radius: 8px;
   border: none;
 
+}
+.section-title{
+  font-size: 2.8rem;
+  font-weight: 700px;
+}
+
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section{
+  margin-top: 130px;
 }
 /* header styles */
 .nav-brand{
@@ -63,5 +78,48 @@
 }
 .banner-img{
   width: 100%;
+}
+.teams{
+  align-items: center;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }           
+.our-feachers{
+  margin-left: 130px;
+  max-width: 530px;
+}
 
+#first{
+  font-weight: 500;
+}
+.feacher-des{
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar, 
+  .nav-links, 
+  .teams{
+    flex-direction: column;
+  }
+  .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-feachers{
+    margin-left: 20px;
+  }
+  
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+  .teams{
+    flex-direction: column;
+  }
+  .our-feachers{
+    margin: 20px auto ;
+  }
+}
